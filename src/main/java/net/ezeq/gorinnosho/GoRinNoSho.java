@@ -1,5 +1,6 @@
 package net.ezeq.gorinnosho;
 
+import net.ezeq.gorinnosho.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -17,6 +18,7 @@ public class GoRinNoSho implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.

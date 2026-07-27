@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "go-rin-no-sho:item/teachings_kancho"
+  }
+}
