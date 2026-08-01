@@ -12,6 +12,31 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven {
+		name = 'Modrinth'
+		url = 'https://api.modrinth.com/maven'
+		content {
+			includeGroup 'maven.modrinth'
+		}
+	}
+	maven {
+		name = "KosmX's maven"
+		url = 'https://maven.kosmx.dev/'
+	}
+	maven { url "https://maven.shedaniel.me/" }
+	maven { url "https://maven.terraformersmc.com/releases/" }
+	maven {
+		name = 'Ladysnake Mods'
+		url = 'https://maven.ladysnake.org/releases'
+	}
+	maven {
+		name = "Ladysnake Mods"
+		url = 'https://maven.ladysnake.org/releases'
+	}
+	maven { url 'https://jitpack.io' }
+	maven { url "https://registry.somethingcatchy.net/repository/maven-public/" }
+	maven { url "https://somethingcatchy.net"
+	}
 }
 
 fabricApi {
@@ -28,6 +53,50 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	modApi("maven.modrinth:spell-engine:${project.spell_engine_version}")
+
+	modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:${project.player_anim}")
+
+	modApi("maven.modrinth:spell-power:${project.spell_power_version}")
+
+	modImplementation "maven.modrinth:7zlUOZvb:9iKX3SwF"
+
+	modImplementation("maven.modrinth:trinkets:${project.trinkets_version}")
+
+	modImplementation "org.ladysnake.cardinal-components-api:cardinal-components-base:${project.cca_version}"
+	modImplementation "org.ladysnake.cardinal-components-api:cardinal-components-entity:${project.cca_version}"
+
+	modImplementation "maven.modrinth:I1r0dZiV:2.1.4"
+
+	modImplementation "maven.modrinth:entity-model-features:${project.emf_version}"
+
+	modImplementation "maven.modrinth:entitytexturefeatures:${project.etf_version}"
+
+	modImplementation "maven.modrinth:continuity:${project.continuity_version}"
+
+	modImplementation "maven.modrinth:lithostitched:${project.lithostitched_version}"
+
+	modImplementation "maven.modrinth:polytone:${project.polytone_version}"
+
+	modImplementation files("libs/codecui-fabric-1.21.1-1.1.5.jar")
+	include files("libs/codecui-fabric-1.21.1-1.1.5.jar")
+
+	modImplementation "${project.tinyconfig_group}:${project.tinyconfig_slug}:${project.tinyconfig_version}"
+	include "${project.tinyconfig_group}:${project.tinyconfig_slug}:${project.tinyconfig_version}"
+
+	modImplementation "${project.moonlight_group}:${project.moonlight_slug}:${project.moonlight_version}"
+	include "${project.moonlight_group}:${project.moonlight_slug}:${project.moonlight_version}"
+
+	modImplementation files("libs/exp4j-${project.exp4j_version}.jar")
+	include files("libs/exp4j-${project.exp4j_version}.jar")
+
+	implementation files("libs/mvel2-${project.mvel_version}.jar")
+	include files("libs/mvel2-${project.mvel_version}.jar")
+
+	modApi("me.shedaniel.cloth:cloth-config-fabric:15.0.140") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
 }
 
 processResources {

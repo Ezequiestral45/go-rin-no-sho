@@ -32,6 +32,9 @@
 		"fabricloader": ">=0.19.3",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"spell_engine": "*",
+		"spell_power": ">=1.5.0+1.21.1",
+		"sengoku": "*"
 	}
 }

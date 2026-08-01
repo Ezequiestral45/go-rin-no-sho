@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "go-rin-no-sho:clean_mind", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:palm_strike", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:kabura_arrow", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:blessing_of_the_sage", "required": false
+    }
+  ]
+}

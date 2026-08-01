@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "go-rin-no-sho:boon_of_the_hare", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:unheard_of", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:off_guard", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:get_over_here", "required": false
+    }
+  ]
+}

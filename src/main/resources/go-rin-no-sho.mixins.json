@@ -3,7 +3,9 @@
 	"package": "net.ezeq.gorinnosho.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"LivingEntityMixin",
+		"SpellSchoolsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,0 +1,16 @@
+{
+  "school": "spell_power:shinobi",
+  "type": "ACTIVE",
+  "tier": 3,
+  "learn": {},
+  "active": {"cast": {"duration": 0}},
+  "target": {"type": "CASTER"},
+  "deliver": {"type": "DIRECT"},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "go-rin-no-sho:envenomed",
+      "duration": 10,
+      "amplifier": 0,
+      "apply_mode": "SET"}}}],
+  "cost": {"cooldown": {"duration": 10}}
+}

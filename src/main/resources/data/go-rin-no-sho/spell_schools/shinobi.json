@@ -1,0 +1,10 @@
+{
+  "color": "#3a3a3a",
+  "damage_attribute": "spell_power:shinobi",
+  "crit_chance_attribute": "spell_power:shinobi_crit_chance",
+  "crit_damage_attribute": "spell_power:shinobi_crit_damage",
+  "has_stats_bonus": true,
+  "stats_bonus": {
+    "attributes": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "school": "spell_power:shinobi",
+  "type": "ACTIVE",
+  "tier": 1,
+  "learn": {},
+  "active": {"cast": {"duration": 0}},
+  "target": {"type": "CASTER"},
+  "deliver": {"type": "DIRECT"},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "minecraft:jump_boost",
+          "duration": 200,
+          "amplifier": 1,
+          "apply_mode": "SET"}}}],
+  "cost": {"cooldown": {"duration": 20}}
+}

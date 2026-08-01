@@ -1,12 +1,24 @@
 package net.ezeq.gorinnosho;
 
 import net.ezeq.gorinnosho.item.ModItems;
+import net.ezeq.gorinnosho.effect.ModEffects;
 import net.fabricmc.api.ModInitializer;
-
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.ClampedEntityAttribute;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import net.spell_power.api.SpellSchools;
+import net.spell_power.api.SpellSchool;
+
 
 public class GoRinNoSho implements ModInitializer {
 	public static final String MOD_ID = "go-rin-no-sho";
@@ -16,17 +28,34 @@ public class GoRinNoSho implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	public static SpellSchool SHINOBI;
+	public static SpellSchool BUSHI;
+	public static SpellSchool SOHEI;
+
 	@Override
 	public void onInitialize() {
+
 		ModItems.registerModItems();
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		net.ezeq.gorinnosho.effect.ModEffects.registerEffects();
 
-		LOGGER.info("Hello Fabric world!");
-	}
+		LOGGER.info("Registered Custom Arts: Shinobi, Bushi and Sohei");
 
-	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID, path);
+		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
+			if (entity instanceof LivingEntity target) {
+
+				if (player.hasStatusEffect(ModEffects.ENVENOMED_BUFF)) {
+
+					if (!world.isClient()) {
+						target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 200, 1));
+
+						player.removeStatusEffect(ModEffects.ENVENOMED_BUFF);
+					}
+					return ActionResult.PASS;
+				}
+			}
+			return ActionResult.PASS;
+		});
+
+		LOGGER.info("Go-Rin No Sho!");
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "go-rin-no-sho:headbutt", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:palm_strike", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:oni_vigor", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:oni_smash", "required": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "go-rin-no-sho:charge", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:war_cry", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:defensive_push", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:yari_wall", "required": false
+    }
+  ]
+}

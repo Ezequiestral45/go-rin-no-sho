@@ -1,0 +1,24 @@
+{
+  "school": "spell_power:shinobi",
+  "type": "ACTIVE",
+  "tier": 4,
+  "learn": {},
+  "active": {},
+  "target": {"type": "CASTER"},
+  "range": 0,
+  "deliver": {"type": "STASH_EFFECT", "stash_effect": {
+    "id": "go-rin-no-sho:loadedsubstance",
+    "amplifier": 0,
+    "duration": 10,
+    "consume": 1,
+    "triggers": [{"type": "ARROW_SHOT"}],
+    "impact_mode": "TRANSFER"}},
+  "impacts": [{
+    "action": {"type": "STATUS_EFFECT", "status_effect": {
+      "effect_id": "go-rin-no-sho:volatile",
+      "duration": 60,
+      "amplifier": 0,
+      "apply_mode": "ADD"}}}],
+  "arrow_perks": {"bypass_iframes": true},
+  "cost": {"cooldown": {"duration": 5}}
+}

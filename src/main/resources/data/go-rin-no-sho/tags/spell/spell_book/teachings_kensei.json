@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "go-rin-no-sho:charge", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:fearless", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:pommel_strike", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:tsubame_gaeshi", "required": false
+    }
+  ]
+}

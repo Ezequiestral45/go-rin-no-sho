@@ -1,0 +1,10 @@
+{
+  "color": "#992222",
+  "damage_attribute": "spell_power:bushi",
+  "crit_chance_attribute": "spell_power:bushi_crit_chance",
+  "crit_damage_attribute": "spell_power:bushi_crit_damage",
+  "has_stats_bonus": true,
+  "stats_bonus": {
+    "attributes": []
+  }
+}

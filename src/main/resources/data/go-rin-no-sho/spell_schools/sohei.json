@@ -1,0 +1,10 @@
+{
+  "color": "#229991a",
+  "damage_attribute": "spell_power:sohei",
+  "crit_chance_attribute": "spell_power:sohei_crit_chance",
+  "crit_damage_attribute": "spell_power:sohei_crit_damage",
+  "has_stats_bonus": true,
+  "stats_bonus": {
+    "attributes": []
+  }
+}
