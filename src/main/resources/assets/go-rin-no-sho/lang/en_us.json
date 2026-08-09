@@ -6,34 +6,71 @@
   "attribute.name.go-rin-no-sho.sohei": "Sohei Arts Power",
   "effect.go-rin-no-sho.sohei": "Sohei Zen",
 
-  "item.go-rin-no-sho.spell_book/teachings_kancho": "Teachings of Kancho",
-  "item.go-rin-no-sho.spell_book/teachings_kancho.spell_binding.description": "Shadow Lurker",
-  "item.go-rin-no-sho.spell_book/teachings_konran": "Teachings of Konran",
-  "item.go-rin-no-sho.spell_book/teachings_konran.spell_binding.description": "Chaotic Swordsman",
-  "item.go-rin-no-sho.spell_book/teachings_teisatsu": "Teachings of Teisatsu",
-  "item.go-rin-no-sho.spell_book/teachings_teisatsu.spell_binding.description": "Wild Scout",
+  "item.go-rin-no-sho.spell_book/teachings_shinobi": "Teachings of the Shinobi",
+  "item.go-rin-no-sho.spell_book/teachings_shinobi.spell_binding.description": "To Conceal, To Endure",
   "item.go-rin-no-sho.spell_book/teachings_hozoin": "Teachings of Hozoin",
   "item.go-rin-no-sho.spell_book/teachings_hozoin.spell_binding.description": "Unbreakable Wall",
   "item.go-rin-no-sho.spell_book/teachings_kensei": "Teachings of Kensei",
   "item.go-rin-no-sho.spell_book/teachings_kensei.spell_binding.description": "Blade Saint",
   "item.go-rin-no-sho.spell_book/teachings_kyudo": "Teachings of Kyudo",
   "item.go-rin-no-sho.spell_book/teachings_kyudo.spell_binding.description": "Keen Marksman",
-  "item.go-rin-no-sho.spell_book/teachings_akuso": "Teachings of Akuso",
-  "item.go-rin-no-sho.spell_book/teachings_akuso.spell_binding.description": "Ruinous Brute",
-  "item.go-rin-no-sho.spell_book/teachings_gakushu": "Teachings of Gakushu",
-  "item.go-rin-no-sho.spell_book/teachings_gakushu.spell_binding.description": "Diligent Monk",
-  "item.go-rin-no-sho.spell_book/teachings_gama": "Teachings of Gama",
-  "item.go-rin-no-sho.spell_book/teachings_gama.spell_binding.description": "Wise Sage",
+  "item.go-rin-no-sho.spell_book/teachings_sohei": "Teachings of the Sohei",
+  "item.go-rin-no-sho.spell_book/teachings_sohei.spell_binding.description": "To Learn Through Practice",
+
+  //Shinobi Spells
 
   "spell.go-rin-no-sho.boon_of_the_hare.name": "Boon of the Hare",
-  "spell.go-rin-no-sho.boon_of_the_hare.description": "Enhance your Agility to boost your Jump Height.",
-  "spell.go-rin-no-sho.makibishi_retreat.name": "Makibishi Retreat",
-  "spell.go-rin-no-sho.makibishi_retreat.description": "Dodge backwards as you throw Caltrops to Cripple Enemies.",
+  "spell.go-rin-no-sho.boon_of_the_hare.description": "Enhance your Agility to Boost your Jump Height and Speed.",
+  "spell.go-rin-no-sho.persistence.name": "Persistence",
+  "spell.go-rin-no-sho.persistence.description": "Ignore your Fatigue Clearing your Active Cooldowns.",
+  "spell.go-rin-no-sho.makibishi_retreat.name": "Makibishi Release",
+  "spell.go-rin-no-sho.makibishi_retreat.description": "Release Caltrops to Cripple and Poison Enemies.",
+  "spell.go-rin-no-sho.intention.name": "Killing Intent",
+  "spell.go-rin-no-sho.intention.description": "Focus your Intentions to Deliver Lethal Strikes.",
   "spell.go-rin-no-sho.tetrodotoxin.name": "Tetrodotoxin",
   "spell.go-rin-no-sho.tetrodotoxin.description": "Empower your next Attack with a Dangerous Toxin.",
   "spell.go-rin-no-sho.unstable_substance.name": "Unstable Substance",
   "spell.go-rin-no-sho.unstable_substance.description": "Your next Arrow will carry a Exploding Substance that gets triggered against Poisoned Enemies",
+  "spell.go-rin-no-sho.deep_cut.name": "Deep Cut",
+  "spell.go-rin-no-sho.deep_cut.description": "Slash in front of you to make your Enemies Bleed.",
+  "spell.go-rin-no-sho.off_guard.name": "Off Guard",
+  "spell.go-rin-no-sho.off_guard.description": "Hit your Unsuspecting Enemies and Disarm them for a Moment.",
+  "spell.go-rin-no-sho.get_over_here.name": "Get Over Here!",
+  "spell.go-rin-no-sho.get_over_here.description": "Shoot a Chained Projectile that can Pull Enemies Towards You!",
+  "spell.go-rin-no-sho.unheard_of.name": "Dissapearing Act",
+  "spell.go-rin-no-sho.unheard_of.description": "Quickly Hide as you make your Enemies Lose your Track.",
 
+  //Bushi Spells
+
+
+
+  //Sohei Spells
+
+  "spell.go-rin-no-sho.clean_mind.name": "Clean Mind",
+  "spell.go-rin-no-sho.clean_mind.description": "Cleanse Your Mind Enduring the Work and Pain.",
+  "spell.go-rin-no-sho.low_sweep.name": "Low Sweep",
+  "spell.go-rin-no-sho.low_sweep.description": "Perform a Low Sweep with your Polearm, Immobilizing your Enemies.",
+  "spell.go-rin-no-sho.sharp_retreat.name": "Sharp Retreat",
+  "spell.go-rin-no-sho.sharp_retreat.description": "Stab Forwards as you Step Backwards, Dealing Damage with the tip of your Polearm.",
+  "spell.go-rin-no-sho.vaulting_kick.name": "Pole Kick",
+  "spell.go-rin-no-sho.vaulting_kick.description": "Plant your Polearm on the Ground, Using it as a Support to Deliver a Strong Kick.",
+  "spell.go-rin-no-sho.headbutt.name": "Headbutt",
+  "spell.go-rin-no-sho.headbutt.description": "Headbutt your Opponents, Stunning them Briefly.",
+  "spell.go-rin-no-sho.palm_strike.name": "Palm Strike",
+  "spell.go-rin-no-sho.palm_strike.description": "Focus your Energy in your Palm, Hitting your Enemies and Pushing Them Afar.",
+  "spell.go-rin-no-sho.oni_vigor.name": "Oni's Vigor",
+  "spell.go-rin-no-sho.oni_vigor.description": "Unleash The Vigor of an Oni, Increasing your Strength Greatly but Reducing your Speed.",
+  "spell.go-rin-no-sho.oni_smash.name": "Oni Smash",
+  "spell.go-rin-no-sho.oni_smash.description": "Smash your Opponents' Heads with a Devastating Overhead Swing.",
+  "spell.go-rin-no-sho.kabura_arrow.name": "Kabura Arrow",
+  "spell.go-rin-no-sho.kabura_arrow.description": "Shoot a Whistling Arrow that deals Great Damage against Evil Spirits.",
+  "spell.go-rin-no-sho.blessing_of_the_sage.name": "Blessing of the Sage",
+  "spell.go-rin-no-sho.blessing_of_the_sage.description": "With the Sage's Blessing, Channel your Energy to Heal your Wounds.",
+
+  "effect.go-rin-no-sho.cleansing": "Cleansing Ritual",
   "effect.go-rin-no-sho.envenomed": "Envenomed Coating",
-  "effect.go-rin-no-sho.volatile": "Volatile Substance"
+  "effect.go-rin-no-sho.volatile": "Volatile Substance",
+  "effect.go-rin-no-sho.loadedsubstance": "Loaded Substance",
+
+  "entity.go-rin-no-sho.makibishi": "Makibishi"
 }

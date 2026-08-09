@@ -1,0 +1,33 @@
+{
+  "school": "spell_power:sohei",
+  "type": "ACTIVE",
+  "tier": 2,
+  "learn": {},
+  "active": {},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": false,
+    "attacks": [{
+      "damage_bonus": 0.15,
+      "duration": 35,
+      "delay": 0.05,
+      "additional_strikes": 0,
+      "forward_momentum": 0.5,
+      "hitbox": { "length": 6.0, "width": 3.0, "height": 2.0, "arc": 120 },
+      "animation": { "id": "go-rin-no-sho:headbutt"}}]}},
+  "impacts": [
+    {
+      "action": {
+        "type": "DISRUPT", "disrupt": {
+          "shield_blocking": true, "item_usage_seconds": 5.0 }}},
+    {
+      "action": {
+        "type": "STATUS_EFFECT", "status_effect": {
+          "effect_id": "spell_engine:stun",
+          "duration": 3,
+          "amplifier": 1,
+          "apply_mode": "ADD"}}}],
+  "cost": {"cooldown": { "duration": 10}}
+}

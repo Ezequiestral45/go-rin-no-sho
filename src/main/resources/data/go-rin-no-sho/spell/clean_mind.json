@@ -1,0 +1,34 @@
+{
+  "school": "spell_power:sohei",
+  "type": "ACTIVE",
+  "tier": 1,
+  "learn": {},
+  "range": 0,
+  "active": {"cast": {"duration": 0}},
+  "target": {"type": "CASTER"},
+  "deliver": {"type": "DIRECT"},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "minecraft:haste",
+      "duration": 12,
+      "amplifier": 1,
+      "apply_mode": "ADD"}}},
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "minecraft:resistance",
+      "duration": 10,
+      "amplifier": 0,
+      "apply_mode": "ADD"}}}],
+  "area_impact": {
+    "radius": 2.0,
+    "particles": [
+      {
+        "particle_id": "spell_engine:flame_spark",
+        "origin": "CENTER",
+        "shape": "CIRCLE",
+        "count": 15.0,
+        "min_speed": 0.25,
+        "max_speed": 0.5,
+        "pre_spawn_travel": 1.0
+      }]},
+  "cost": {"cooldown": {"duration": 15}}
+}

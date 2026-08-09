@@ -1,0 +1,34 @@
+{
+  "school": "spell_power:sohei",
+  "type": "ACTIVE",
+  "tier": 1,
+  "learn": {},
+  "active": {},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": false,
+    "attacks": [{
+      "damage_bonus": 0.1,
+      "duration": 35,
+      "delay": 0.1,
+      "additional_strikes": 0,
+      "forward_momentum": 0.5,
+      "hitbox": { "length": 6.0, "width": 3.0, "height": 2.0, "arc": 90 },
+      "animation": { "id": "go-rin-no-sho:palm_strike"}}]}},
+  "impacts": [
+    {
+      "action": {
+        "type": "DISRUPT", "disrupt": {
+          "shield_blocking": true, "item_usage_seconds": 2.0 }}},
+    {
+      "action": {
+        "type": "VELOCITY", "velocity": {
+          "frame": "LOOK",
+          "push": { "x": 0.0, "y": 0.2, "z": 2},
+          "power_coefficient": 0.0,
+          "reset_velocity": true,
+          "intent": "HARMFUL"}}}],
+  "cost": {"cooldown": { "duration": 10}}
+}

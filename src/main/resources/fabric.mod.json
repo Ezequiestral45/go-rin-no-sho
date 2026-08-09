@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
 	"id": "go-rin-no-sho",
-	"version": "${version}",
+	"version": "0.2.0",
 	"name": "Go-Rin No Sho",
 	"description": "This mod aims to bring abilities to the mod Sengoku Jidai by QwikSand through Spell Engine",
 	"authors": [
-		"Eze45"
+		"Eze45!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -31,10 +31,11 @@
 	"depends": {
 		"fabricloader": ">=0.19.3",
 		"minecraft": "~1.21.1",
+		"spell_engine": "*",
 		"java": ">=21",
 		"fabric-api": "*",
-		"spell_engine": "*",
 		"spell_power": ">=1.5.0+1.21.1",
+		"defaulted": ">=1.3.8",
 		"sengoku": "*"
 	}
 }

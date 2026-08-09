@@ -1,0 +1,38 @@
+{
+  "school": "spell_power:sohei",
+  "type": "ACTIVE",
+  "tier": 2,
+  "learn": {},
+  "active": {},
+  "target": {"type": "CASTER"},
+  "range": 0,
+  "deliver": {"type": "STASH_EFFECT", "stash_effect": {
+    "id": "go-rin-no-sho:cleansing",
+    "amplifier": 0,
+    "duration": 10,
+    "consume": 1,
+    "triggers": [{"type": "ARROW_SHOT"}],
+    "impact_mode": "TRANSFER"}},
+  "impacts": [{
+    "target_modifiers": [
+      {
+        "conditions": [ { "entity_type": "#minecraft:yokai" } ],
+        "execute": "ALLOW",
+        "modifier": { "power_multiplier": 2.5 }
+      }
+    ],
+    "action": {"type": "STATUS_EFFECT",
+      "status_effect": {
+        "effect_id": "minecraft:wither",
+        "duration": 15,
+        "amplifier": 3,
+        "apply_mode": "ADD",
+        "amplifier_power_multiplier": 2}}},
+    {
+    "action": {
+      "type": "DAMAGE",
+      "damage": {
+        "spell_power_coefficient": 2.0,
+        "bypass_iframes": true}}}],
+  "cost": {"cooldown": {"duration": 15}}
+}

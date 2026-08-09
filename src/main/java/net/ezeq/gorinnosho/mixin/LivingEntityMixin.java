@@ -20,18 +20,25 @@ public abstract class LivingEntityMixin {
     @Shadow public abstract boolean hasStatusEffect(RegistryEntry<StatusEffect> effect);
 
     @Inject(method = "onStatusEffectApplied", at = @At("TAIL"))
-    private void onEffectApplied(StatusEffectInstance effect, Entity source, CallbackInfo ci) {
+    private void onEffectApplied(StatusEffectInstance appliedEffect, Entity source, CallbackInfo ci) {
         LivingEntity entity = (LivingEntity) (Object) this;
         World world = entity.getWorld();
 
         // Now this runs on serverside instead of clientside
         if (!world.isClient() && world instanceof ServerWorld serverWorld) {
             RegistryEntry<StatusEffect> effectA = ModEffects.VOLATILE_DEBUFF;
-            StatusEffectInstance volatileInstance = entity.getStatusEffect(effectA);
-            int amplifier = volatileInstance != null ? volatileInstance.getAmplifier() : 0;
             RegistryEntry<StatusEffect> effectB = net.minecraft.entity.effect.StatusEffects.POISON;
 
             if (this.hasStatusEffect(effectA) && this.hasStatusEffect(effectB)) {
+
+                StatusEffectInstance volatileInstance = entity.getStatusEffect(effectA);
+                int amplifier = 0;
+
+                if (volatileInstance != null) {
+                    amplifier = volatileInstance.getAmplifier();
+                } else if (appliedEffect.getEffectType().equals(effectA)) {
+                    amplifier = appliedEffect.getAmplifier();
+                }
                 // explosion power scales 1.0f small 2.0f medium 3.0f creeper 4.0f tnt
                 serverWorld.createExplosion(
                         entity,
@@ -43,10 +50,10 @@ public abstract class LivingEntityMixin {
                         World.ExplosionSourceType.NONE
                 );
 
-                float TotalDamage = 10.0f + (amplifier * 10.0f);
+                float TotalDamage = 5.0f + (amplifier * 10.0f);
                 entity.damage(serverWorld.getDamageSources().magic(), TotalDamage);
 
-                // take away volatile so it doesn't loop
+                // take away volatile so it doesn't explode one million times
                 entity.removeStatusEffect(effectA);
             }
         }

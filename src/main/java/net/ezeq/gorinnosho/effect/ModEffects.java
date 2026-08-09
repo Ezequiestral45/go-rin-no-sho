@@ -29,9 +29,14 @@ public class ModEffects {
             Identifier.of(GoRinNoSho.MOD_ID, "volatile"),
             new VolatileStatusEffect(StatusEffectCategory.HARMFUL, 0x946734)
     );
+    public static final RegistryEntry<StatusEffect> CLEANSING_BUFF = Registry.registerReference(
+            Registries.STATUS_EFFECT,
+            Identifier.of(GoRinNoSho.MOD_ID, "cleansing"),
+            new CleansingStatusEffect(StatusEffectCategory.BENEFICIAL, 0xffd966)
+    );
 
     public static void registerEffects() {
-        GoRinNoSho.LOGGER.info("Registering Status Effects for " + GoRinNoSho.MOD_ID);
+        GoRinNoSho.LOGGER.info("Giving a read to " + GoRinNoSho.MOD_ID);
     }
 
     private static class EnvenomedStatusEffect extends StatusEffect {
@@ -48,5 +53,8 @@ public class ModEffects {
         protected VolatileStatusEffect(StatusEffectCategory category, int color) {
             super(category, color);
         }
+    }
+    private static class CleansingStatusEffect extends StatusEffect {
+        protected CleansingStatusEffect(StatusEffectCategory category, int color) { super(category, color); }
     }
 }

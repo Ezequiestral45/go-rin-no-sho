@@ -1,0 +1,26 @@
+{
+  "school": "spell_power:shinobi",
+  "type": "ACTIVE",
+  "tier": 3,
+  "learn": {},
+  "active": {},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": false,
+    "attacks": [{
+      "damage_bonus": 0.1,
+      "duration": 35,
+      "delay": 0.1,
+      "additional_strikes": 0,
+      "forward_momentum": 0.5,
+      "hitbox": { "length": 5.0, "width": 2.0, "height": 3.0, "arc": 90 },
+      "animation": { "id": "go-rin-no-sho:off_guard"}}]}},
+  "impacts": [{
+    "action": {
+      "type": "DISRUPT",
+      "disrupt": { "shield_blocking": false, "item_usage_seconds": 5.0 }
+    }}],
+  "cost": {"cooldown": { "duration": 15}}
+}

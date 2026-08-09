@@ -1,0 +1,45 @@
+{
+  "school": "spell_power:sohei",
+  "type": "ACTIVE",
+  "tier": 3,
+  "learn": {},
+  "range": 0,
+  "active": { "cast": {
+    "duration": 2, "animation": { "id": "go-rin-no-sho:oni_charge", "speed": 0.5}}},
+  "target": {"type": "CASTER"},
+  "deliver": {"type": "DIRECT"},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT", "apply_to_caster": true, "status_effect":
+    {"effect_id": "minecraft:slowness",
+      "duration": 15,
+      "amplifier": 1,
+      "apply_mode": "SET"}}},
+    {"action": {"type": "STATUS_EFFECT", "apply_to_caster": true, "status_effect":
+    {"effect_id": "minecraft:strength",
+      "duration": 15,
+      "amplifier": 2,
+      "apply_mode": "SET"}}}],
+  "area_impact": {
+    "radius": 5.0,
+    "particles": [
+      {
+        "particle_id": "minecraft:campfire_cosy_smoke",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 15.0,
+        "min_speed": 0.2,
+        "max_speed": 0.5,
+        "pre_spawn_travel": 1.0
+      },
+      {
+        "particle_id": "minecraft:raid_omen",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 25.0,
+        "min_speed": 0.4,
+        "max_speed": 0.6,
+        "pre_spawn_travel": 1.0
+      }
+    ]},
+  "cost": {"cooldown": {"duration": 25}}
+}

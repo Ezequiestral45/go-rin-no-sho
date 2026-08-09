@@ -17,7 +17,7 @@
     "action": {"type": "STATUS_EFFECT", "status_effect": {
       "effect_id": "go-rin-no-sho:volatile",
       "duration": 60,
-      "amplifier": 0,
+      "amplifier": 1,
       "apply_mode": "ADD"}}}],
   "arrow_perks": {"bypass_iframes": true},
   "cost": {"cooldown": {"duration": 5}}

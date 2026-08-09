@@ -1,0 +1,34 @@
+{
+  "values": [
+    {
+      "id": "go-rin-no-sho:clean_mind", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:low_sweep", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:sharp_retreat", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:vaulting_kick", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:headbutt", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:palm_strike", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:oni_vigor", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:oni_smash", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:kabura_arrow", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:blessing_of_the_sage", "required": false
+    }
+  ]
+}

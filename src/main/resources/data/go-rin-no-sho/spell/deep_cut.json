@@ -1,0 +1,27 @@
+{
+  "school": "spell_power:shinobi",
+  "type": "ACTIVE",
+  "tier": 4,
+  "learn": {},
+  "active": {},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": false,
+    "attacks": [{
+      "damage_bonus": 0.25,
+      "duration": 35,
+      "delay": 0.15,
+      "additional_strikes": 0,
+      "forward_momentum": 0.75,
+      "hitbox": { "length": 5.0, "width": 3.0, "height": 3.0, "arc": 120 },
+      "animation": { "id": "go-rin-no-sho:deep_cut"}}]}},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "spell_engine:bleed",
+      "duration": 15,
+      "amplifier": 1,
+      "apply_mode": "ADD"}}}],
+  "cost": {"cooldown": { "duration": 20}}
+}

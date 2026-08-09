@@ -1,0 +1,35 @@
+{
+  "school": "spell_power:sohei",
+  "type": "ACTIVE",
+  "tier": 4,
+  "learn": {},
+  "active": { "cast": {
+    "duration": 1, "animation": { "id": "go-rin-no-sho:oni_charge", "speed": 0.5}}},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": false,
+    "attacks": [{
+      "damage_bonus": 0.5,
+      "duration": 35,
+      "delay": 0.15,
+      "additional_strikes": 0,
+      "forward_momentum": 0.5,
+      "hitbox": { "length": 6, "width": 3, "height": 5.0, "arc": 90 },
+      "animation": { "id": "spell_engine:two_handed_slash_vertical_slash"}}]}},
+  "impacts": [
+    {
+      "action": {"type": "STATUS_EFFECT", "status_effect": {
+        "effect_id": "spell_engine:immobilize",
+        "duration": 4,
+        "amplifier": 0,
+        "apply_mode": "ADD"}}},
+    {
+      "action": {"type": "STATUS_EFFECT", "apply_to_caster": true, "status_effect": {
+        "effect_id": "minecraft:resistance",
+        "duration": 10,
+        "amplifier": 0,
+        "apply_mode": "ADD"}}}],
+  "cost": {"cooldown": { "duration": 25}}
+}

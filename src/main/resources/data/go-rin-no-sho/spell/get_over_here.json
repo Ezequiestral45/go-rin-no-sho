@@ -1,0 +1,33 @@
+{
+  "school": "spell_power:shinobi",
+  "type": "ACTIVE",
+  "tier": 4,
+  "learn": {},
+  "active": {},
+  "target": {"type": "AIM",
+    "aim": {
+      "required": false,
+      "sticky": false,
+      "use_caster_as_fallback": false,
+      "reposition_vertically": 0.0}},
+  "range": 10,
+  "deliver": {"type": "SHOOT_ARROW", "shoot_arrow": {"launch_properties": { "velocity": 1}}},
+  "arrow_perks": {"damage_multiplier": 0.75, "bypass_iframes": true, "knockback": 0.5},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT",
+      "status_effect": {
+        "effect_id": "spell_engine:immobilize",
+        "duration": 5,
+        "amplifier": 0,
+        "apply_mode": "ADD"}}},
+    {"action": {"type": "VELOCITY", "velocity": {
+      "frame": "LOOK",
+      "push": {
+        "x": 0.0,
+        "y": 0.2,
+        "z": -1.0},
+      "power_coefficient": 0.8,
+      "reset_velocity": true,
+      "intent": "HARMFUL"}}}],
+  "cost": {"cooldown": {"duration": 10}}
+}

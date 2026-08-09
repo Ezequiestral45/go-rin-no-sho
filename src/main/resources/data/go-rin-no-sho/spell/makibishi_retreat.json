@@ -3,20 +3,27 @@
   "type": "ACTIVE",
   "tier": 2,
   "learn": {},
-  "active": {"cast": {"duration": 0}},
-  "target": {"type": "CASTER"},
-  "deliver": {"type": "CLOUD"},
-  "clouds": [
-    {"volume": {"radius": 3.5, "area": {"vertical_range_multiplier": 0.3}},
-      "time_to_live": 5,
-      "impact_tick_interval": 20,
-      "placement": {"force_onto_ground": true}}],
+  "active": {},
+  "range": 7,
+  "deliver": {"type": "CLOUD",
+  "clouds": [{
+    "entity_type_id": "go-rin-no-sho:makibishi",
+    "volume": {"radius": 2, "area": {"vertical_range_multiplier": 2.0}},
+    "time_to_live_seconds": 7.5,
+    "impact_tick_interval": 10,
+    "placement": {"force_onto_ground": true}}]},
   "impacts": [
     {"action": {"type": "STATUS_EFFECT", "status_effect":
     {"effect_id": "minecraft:slowness",
-      "duration": 100,
+      "duration": 7.5,
       "amplifier": 1,
-      "apply_mode": "SET",
-      "action.apply_to_caster": false}}}],
-  "cost": {"cooldown": { "duration": 10}}
+      "apply_mode": "ADD",
+      "apply_to_caster": false}}},
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "minecraft:poison",
+      "duration": 5,
+      "amplifier": 0,
+      "apply_mode": "ADD",
+      "apply_to_caster": false}}}],
+  "cost": {"cooldown": { "duration": 15}}
 }

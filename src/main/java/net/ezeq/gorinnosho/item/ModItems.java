@@ -16,7 +16,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        GoRinNoSho.LOGGER.info("Registering Mod Items for " + GoRinNoSho.MOD_ID);
+        GoRinNoSho.LOGGER.info("Reading the five teachings on " + GoRinNoSho.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
 

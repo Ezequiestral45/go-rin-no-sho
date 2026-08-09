@@ -1,0 +1,34 @@
+{
+  "values": [
+    {
+      "id": "go-rin-no-sho:boon_of_the_hare", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:makibishi_retreat", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:tetrodotoxin","required": false
+    },
+    {
+      "id": "go-rin-no-sho:unstable_substance", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:persistence", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:intention", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:off_guard", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:deep_cut", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:unheard_of", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:get_over_here", "required": false
+    }
+  ]
+}

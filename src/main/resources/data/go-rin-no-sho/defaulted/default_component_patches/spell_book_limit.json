@@ -1,0 +1,13 @@
+{
+  "elements": [
+    "spell_engine:spell_book"
+  ],
+  "patch": {
+    "spell_engine:spell_container": {
+      "pools": [
+        "go-rin-no-sho:teachings_shinobi"
+      ],
+      "spell_slots": 4
+    }
+  }
+}

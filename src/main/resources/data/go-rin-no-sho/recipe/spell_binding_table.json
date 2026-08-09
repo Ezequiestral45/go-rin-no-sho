@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:smooth_quartz"
+    }
+  },
+  "pattern": [
+    " B ",
+    "EGE",
+    "SSS"
+  ],
+  "result": {
+    "id": "spell_engine:spell_binding"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "school": "spell_power:shinobi",
+  "type": "ACTIVE",
+  "tier": 2,
+  "learn": {},
+  "range": 0,
+  "active": {},
+  "target": {
+    "type": "CASTER"
+  },
+  "deliver": {
+    "type": "DIRECT"
+  },
+  "impacts": [
+    {
+      "action": {
+        "type": "STATUS_EFFECT", "status_effect":
+        {
+          "effect_id": "minecraft:invisibility",
+          "duration": 5,
+          "amplifier": 0,
+          "apply_mode": "ADD"
+        }
+      }
+    },
+    {
+      "action": {
+        "type": "AGGRO",
+        "aggro": {
+          "mode": "CLEAR",
+          "only_if_targeted": true
+        }
+      }
+    }
+  ],
+  "area_impact": {
+    "radius": 5.0,
+    "particles": [
+      {
+        "particle_id": "spell_engine:smoke_medium",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 25.0,
+        "min_speed": 0.2,
+        "max_speed": 0.5,
+        "pre_spawn_travel": 1.0
+      },
+      {
+        "particle_id": "spell_engine:smoke_medium",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 25.0,
+        "min_speed": 0.12,
+        "max_speed": 0.15,
+        "pre_spawn_travel": 2.0
+      },
+      {
+        "particle_id": "spell_engine:smoke_medium",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 25.0,
+        "min_speed": 0.12,
+        "max_speed": 0.15,
+        "pre_spawn_travel": 4.0
+      },
+      {
+        "particle_id": "minecraft:campfire_cosy_smoke",
+        "origin": "CENTER",
+        "shape": "PIPE",
+        "count": 10.0,
+        "min_speed": 0.01,
+        "max_speed": 0.1
+      },
+      {
+        "particle_id": "minecraft:poof",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 10.0,
+        "min_speed": 0.01,
+        "max_speed": 0.1
+      }
+    ]
+  },
+  "cost": {
+    "cooldown": {
+      "duration": 15
+    }
+  }
+}

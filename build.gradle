@@ -79,24 +79,31 @@ dependencies {
 
 	modImplementation "maven.modrinth:polytone:${project.polytone_version}"
 
+	modImplementation files("libs/jei-1.21.1-fabric-19.39.0.372.jar")
+
+	modImplementation files("libs/bettercombat-fabric-2.4.0+1.21.1.jar")
+
 	modImplementation files("libs/codecui-fabric-1.21.1-1.1.5.jar")
-	include files("libs/codecui-fabric-1.21.1-1.1.5.jar")
+
+	modImplementation "maven.modrinth:LxgPJAAy:rYDD1tES"
 
 	modImplementation "${project.tinyconfig_group}:${project.tinyconfig_slug}:${project.tinyconfig_version}"
-	include "${project.tinyconfig_group}:${project.tinyconfig_slug}:${project.tinyconfig_version}"
 
 	modImplementation "${project.moonlight_group}:${project.moonlight_slug}:${project.moonlight_version}"
-	include "${project.moonlight_group}:${project.moonlight_slug}:${project.moonlight_version}"
 
 	modImplementation files("libs/exp4j-${project.exp4j_version}.jar")
-	include files("libs/exp4j-${project.exp4j_version}.jar")
+
+	modImplementation files("libs/yo_hooks-4.6.2.jar")
 
 	implementation files("libs/mvel2-${project.mvel_version}.jar")
-	include files("libs/mvel2-${project.mvel_version}.jar")
 
 	modApi("me.shedaniel.cloth:cloth-config-fabric:15.0.140") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
+
+	implementation files ("libs/java-diff-utils-4.17.jar")
+
+
 }
 
 processResources {

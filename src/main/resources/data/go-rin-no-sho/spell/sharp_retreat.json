@@ -1,0 +1,34 @@
+{
+  "school": "spell_power:sohei",
+  "type": "ACTIVE",
+  "tier": 4,
+  "learn": {},
+  "active": {},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": true,
+    "attacks": [{
+      "damage_bonus": 0.25,
+      "duration": 35,
+      "delay": 0.1,
+      "additional_strikes": 0,
+      "forward_momentum": 0,
+      "hitbox": { "length": 7.5, "width": 3.0, "height": 3.0, "arc": 45 },
+      "animation": { "id": "go-rin-no-sho:sharp_retreat"}}]}},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "spell_engine:bleed",
+      "duration": 15,
+      "amplifier": 1,
+      "apply_mode": "ADD"}}},
+    {"action": {"type": "VELOCITY", "apply_to_caster": true, "velocity": {
+      "frame": "LOOK",
+      "push": { "x": 0.0, "y": 0.4, "z": -1.0},
+      "power_coefficient": 0.0,
+      "reset_velocity": true,
+      "intent": "HELPFUL"}}}
+  ],
+  "cost": {"cooldown": { "duration": 15}}
+}

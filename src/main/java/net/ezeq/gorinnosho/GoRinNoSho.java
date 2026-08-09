@@ -1,9 +1,13 @@
 package net.ezeq.gorinnosho;
 
+import com.shioh.sengoku.registry.ModEntities;
 import net.ezeq.gorinnosho.item.ModItems;
 import net.ezeq.gorinnosho.effect.ModEffects;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.ClampedEntityAttribute;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -38,7 +42,10 @@ public class GoRinNoSho implements ModInitializer {
 		ModItems.registerModItems();
 		net.ezeq.gorinnosho.effect.ModEffects.registerEffects();
 
-		LOGGER.info("Registered Custom Arts: Shinobi, Bushi and Sohei");
+		LOGGER.info("Registering Custom Arts");
+
+		ModEntities.register();
+
 
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 			if (entity instanceof LivingEntity target) {
@@ -54,6 +61,14 @@ public class GoRinNoSho implements ModInitializer {
 				}
 			}
 			return ActionResult.PASS;
+		});
+
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			ResourceManagerHelper.registerBuiltinResourcePack(
+					Identifier.of(MOD_ID, "learning"),
+					modContainer,
+					ResourcePackActivationType.ALWAYS_ENABLED
+			);
 		});
 
 		LOGGER.info("Go-Rin No Sho!");
