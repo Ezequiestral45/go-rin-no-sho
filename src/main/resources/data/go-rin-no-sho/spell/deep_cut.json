@@ -2,26 +2,48 @@
   "school": "spell_power:shinobi",
   "type": "ACTIVE",
   "tier": 4,
+  "sub_tier": 1,
   "learn": {},
-  "active": {},
+  "active": {
+    "cast": {
+      "duration": 0.45,
+      "animation": { "id": "go-rin-no-sho:deep_cut_charge", "speed": 1.05},
+      "start_sound": { "id": "spell_engine:weapon_shing_a", "speed": 1}
+    }
+  },
   "range": 0,
   "range_mechanic": "MELEE",
   "target": {"type": "NONE"},
   "deliver": {"type": "MELEE", "melee": {
     "allow_airborne": false,
-    "attacks": [{
-      "damage_bonus": 0.25,
-      "duration": 35,
-      "delay": 0.15,
-      "additional_strikes": 0,
-      "forward_momentum": 0.75,
-      "hitbox": { "length": 5.0, "width": 3.0, "height": 3.0, "arc": 120 },
-      "animation": { "id": "go-rin-no-sho:deep_cut"}}]}},
+    "attacks": [
+      {
+        "damage_bonus": 0,
+        "attack_speed_multiplier": 1,
+        "duration": 7,
+        "delay": 0.05,
+        "forward_momentum": 0.3,
+        "hitbox": { "length": 6.0, "arc": 70 },
+        "animation": {"id": "go-rin-no-sho:deep_cut1"},
+        "swing_sound": {"id": "spell_engine:weapon_dagger_throw"},
+        "impact_sound": {"id": "spell_engine:weapon_sickle_impact_large"}
+      },
+      {
+        "damage_bonus": 0,
+        "attack_speed_multiplier": 1,
+        "duration": 20,
+        "delay": 0.05,
+        "forward_momentum": 0.5,
+        "hitbox": { "arc": 120 },
+        "animation": {"id": "go-rin-no-sho:deep_cut2"},
+        "swing_sound": {"id": "spell_engine:weapon_sword_swing", "speed": 0.1}
+      }
+    ]}},
   "impacts": [
     {"action": {"type": "STATUS_EFFECT", "status_effect":
     {"effect_id": "spell_engine:bleed",
-      "duration": 15,
+      "duration": 10,
       "amplifier": 1,
-      "apply_mode": "ADD"}}}],
-  "cost": {"cooldown": { "duration": 20}}
+      "apply_mode": "SET"}}}],
+  "cost": {"cooldown": { "duration": 25}}
 }

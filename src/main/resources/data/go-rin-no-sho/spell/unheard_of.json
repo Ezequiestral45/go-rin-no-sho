@@ -2,9 +2,11 @@
   "school": "spell_power:shinobi",
   "type": "ACTIVE",
   "tier": 2,
+  "sub_tier": 2,
   "learn": {},
   "range": 0,
   "active": {},
+  "release": {"sound": {"id": "go-rin-no-sho:smoke_bomb", "speed": 1.25}},
   "target": {
     "type": "CASTER"
   },

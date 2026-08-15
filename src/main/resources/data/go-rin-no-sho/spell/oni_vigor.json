@@ -2,6 +2,7 @@
   "school": "spell_power:sohei",
   "type": "ACTIVE",
   "tier": 3,
+  "sub_tier": 1,
   "learn": {},
   "range": 0,
   "active": { "cast": {

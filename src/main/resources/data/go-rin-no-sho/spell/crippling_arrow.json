@@ -1,0 +1,42 @@
+{
+  "school": "spell_power:bushi",
+  "type": "ACTIVE",
+  "tier": 2,
+  "sub_tier": 2,
+  "learn": {},
+  "active": {"cast": {
+    "duration": 1.5,
+    "type": "CHARGE",
+    "charge": {
+      "bonus": {
+        "range_add": 40.0
+      }
+    },
+    "animation": {
+      "id": "spell_engine:archery_pull"
+    },
+    "animates_ranged_weapon": true}
+  },
+  "release": {
+    "animation": {
+      "id": "spell_engine:archery_release"}
+  },
+  "target": {"type": "AIM",
+    "aim": {
+      "required": false,
+      "sticky": false,
+      "use_caster_as_fallback": false,
+      "reposition_vertically": 0.0}},
+  "range": 20,
+  "deliver": {"type": "SHOOT_ARROW", "shoot_arrow": {"launch_properties": { "velocity": 1}}},
+  "arrow_perks": {"damage_multiplier": 0.8, "bypass_iframes": true, "knockback": 0.5},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT",
+      "status_effect": {
+        "effect_id": "spell_engine:immobilize",
+        "duration": 5,
+        "amplifier": 0,
+        "apply_mode": "ADD"}}}
+  ],
+  "cost": {"cooldown": {"duration": 10}}
+}

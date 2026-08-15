@@ -1,6 +1,7 @@
 package net.ezeq.gorinnosho;
 
 import com.shioh.sengoku.registry.ModEntities;
+import net.ezeq.gorinnosho.fx.ModSounds;
 import net.ezeq.gorinnosho.item.ModItems;
 import net.ezeq.gorinnosho.effect.ModEffects;
 import net.fabricmc.api.ModInitializer;
@@ -46,22 +47,9 @@ public class GoRinNoSho implements ModInitializer {
 
 		ModEntities.register();
 
+		ModSounds.registerModSounds();
 
-		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
-			if (entity instanceof LivingEntity target) {
 
-				if (player.hasStatusEffect(ModEffects.ENVENOMED_BUFF)) {
-
-					if (!world.isClient()) {
-						target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 200, 1));
-
-						player.removeStatusEffect(ModEffects.ENVENOMED_BUFF);
-					}
-					return ActionResult.PASS;
-				}
-			}
-			return ActionResult.PASS;
-		});
 
 		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
 			ResourceManagerHelper.registerBuiltinResourcePack(

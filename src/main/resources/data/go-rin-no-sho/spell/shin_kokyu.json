@@ -1,0 +1,37 @@
+{
+  "school": "spell_power:bushi",
+  "type": "ACTIVE",
+  "tier": 1,
+  "sub_tier": 1,
+  "learn": {},
+  "range": 0,
+  "active": {},
+  "release": {
+  "sound": { "id": "go-rin-no-sho:breathe_in"}},
+  "target": {"type": "CASTER"},
+  "deliver": {"type": "DIRECT"},
+  "impacts": [
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "minecraft:absorption",
+      "duration": 10,
+      "amplifier": 0,
+      "apply_mode": "ADD"}}},
+    {"action": {"type": "STATUS_EFFECT", "status_effect":
+    {"effect_id": "minecraft:haste",
+      "duration": 15,
+      "amplifier": 1,
+      "apply_mode": "ADD"}}}],
+  "area_impact": {
+    "radius": 2.0,
+    "particles": [
+      {
+        "particle_id": "minecraft:small_gust",
+        "origin": "CENTER",
+        "shape": "SPHERE",
+        "count": 25.0,
+        "min_speed": 0.45,
+        "max_speed": 0.75,
+        "pre_spawn_travel": 1.0
+      }]},
+  "cost": {"cooldown": {"duration": 60}}
+}

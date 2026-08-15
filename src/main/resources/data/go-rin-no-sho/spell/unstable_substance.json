@@ -2,6 +2,7 @@
   "school": "spell_power:shinobi",
   "type": "ACTIVE",
   "tier": 4,
+  "sub_tier": 3,
   "learn": {},
   "active": {},
   "target": {"type": "CASTER"},

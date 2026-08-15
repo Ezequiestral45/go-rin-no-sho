@@ -1,16 +1,23 @@
 {
   "school": "spell_power:shinobi",
   "type": "ACTIVE",
+  "sub_tier": 2,
   "tier": 3,
   "learn": {},
   "range": 0,
-  "active": {"cast": {"duration": 0}},
+  "active": {},
   "target": {"type": "CASTER"},
-  "deliver": {"type": "DIRECT"},
-  "impacts": [
-    {"action": {"type": "STATUS_EFFECT", "status_effect":
-    {"effect_id": "go-rin-no-sho:envenomed",
+  "deliver":  {"type": "STASH_EFFECT", "stash_effect":
+    {"id": "go-rin-no-sho:envenomed",
+      "amplifier": 1,
       "duration": 10,
+      "consume": 1,
+      "triggers": [{"type": "MELEE_IMPACT"}],
+      "impact_mode": "PERFORM"}},
+  "impacts": [{
+    "action": {"type": "STATUS_EFFECT", "status_effect": {
+      "effect_id": "minecraft:poison",
+      "duration": 7,
       "amplifier": 0,
       "apply_mode": "SET"}}}],
   "cost": {"cooldown": {"duration": 10}}

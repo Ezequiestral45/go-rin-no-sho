@@ -1,0 +1,34 @@
+{
+  "values": [
+    {
+      "id": "go-rin-no-sho:charge", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:shin_kokyu", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:pommel_strike", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:tsubame_gaeshi", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:war_cry", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:san_dan_tsuki", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:yari_wall", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:kai_hanare", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:crippling_arrow", "required": false
+    },
+    {
+      "id": "go-rin-no-sho:kiri_age", "required": false
+    }
+  ]
+}

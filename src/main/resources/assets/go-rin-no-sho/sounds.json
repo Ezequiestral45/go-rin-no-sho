@@ -1,0 +1,42 @@
+{
+  "full_charge": {
+    "sounds": [
+      "go-rin-no-sho:full_charge"
+    ]
+  },
+  "smoke_bomb": {
+    "sounds": [
+      "go-rin-no-sho:smoke_bomb"
+    ]
+  },
+  "breathe_in": {
+    "sounds": [
+      "go-rin-no-sho:breathe_in"
+    ]
+  },
+  "breathe_out": {
+    "sounds": [
+      "go-rin-no-sho:breathe_out"
+    ]
+  },
+  "caltrop_drop": {
+    "sounds": [
+      "go-rin-no-sho:caltrop_drop"
+    ]
+  },
+  "sage_blessing": {
+    "sounds": [
+      "go-rin-no-sho:sage_blessing"
+    ]
+  },
+  "chain_breaking": {
+    "sounds": [
+      "go-rin-no-sho:chain_breaking"
+    ]
+  },
+  "battle_cry": {
+    "sounds": [
+      "go-rin-no-sho:battle_cry"
+    ]
+  }
+}

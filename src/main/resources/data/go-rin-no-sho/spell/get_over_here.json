@@ -2,6 +2,7 @@
   "school": "spell_power:shinobi",
   "type": "ACTIVE",
   "tier": 4,
+  "sub_tier": 2,
   "learn": {},
   "active": {},
   "target": {"type": "AIM",

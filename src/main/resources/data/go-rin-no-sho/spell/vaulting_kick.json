@@ -2,6 +2,7 @@
   "school": "spell_power:sohei",
   "type": "ACTIVE",
   "tier": 3,
+  "sub_tier": 2,
   "learn": {},
   "active": { "cast": {
     "duration": 0.5, "animation": { "id": "go-rin-no-sho:pole_kick_charge", "speed": 1}}},
@@ -12,18 +13,18 @@
     "allow_airborne": false,
     "attacks": [{
       "damage_bonus": 0.15,
-      "duration": 35,
+      "duration": 25,
       "delay": 0.1,
       "additional_strikes": 0,
       "forward_momentum": 1,
-      "hitbox": { "length": 7.5, "width": 3, "height": 3.0, "arc": 120 },
+      "hitbox": { "length": 7.5, "width": 2.0, "height": 3.0, "arc": 100 },
       "animation": { "id": "go-rin-no-sho:pole_kick"}}]}},
   "impacts": [
     {
       "action": {
         "type": "VELOCITY", "velocity": {
           "frame": "LOOK",
-          "push": { "x": 0.0, "y": 0.3, "z": 2.5},
+          "push": { "x": 0.0, "y": 0.3, "z": 2},
           "power_coefficient": 0.0,
           "reset_velocity": true,
           "intent": "HARMFUL"}}},

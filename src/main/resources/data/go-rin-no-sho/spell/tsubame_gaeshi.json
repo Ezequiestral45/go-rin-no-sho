@@ -1,0 +1,37 @@
+{
+  "school": "spell_power:bushi",
+  "type": "ACTIVE",
+  "tier": 4,
+  "sub_tier": 1,
+  "learn": {},
+  "active": {},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": false,
+    "attacks": [
+      {
+        "damage_bonus": 0.2,
+        "attack_speed_multiplier": 1,
+        "duration": 10,
+        "delay": 0.2,
+        "forward_momentum": 0.3,
+        "hitbox": { "arc": 120 },
+        "animation": {"id": "go-rin-no-sho:tsubame_gaeshi1"},
+        "swing_sound": {"id": "spell_engine:weapon_claymore_swing"},
+        "impact_sound": {"id": "spell_engine:weapon_claymore_impact"}
+      },
+      {
+        "damage_bonus": 0.1,
+        "attack_speed_multiplier": 1,
+        "duration": 20,
+        "delay": 0.05,
+        "forward_momentum": 0.5,
+        "hitbox": { "arc": 120 },
+        "animation": {"id": "go-rin-no-sho:tsubame_gaeshi2", "speed": 0.8},
+        "swing_sound": {"id": "spell_engine:weapon_claymore_swing", "speed": 0.7}
+      }
+    ]}},
+  "cost": {"cooldown": { "duration": 25}}
+}

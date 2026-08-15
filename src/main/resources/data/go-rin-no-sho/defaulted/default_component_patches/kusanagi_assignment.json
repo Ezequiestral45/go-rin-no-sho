@@ -1,13 +1,13 @@
 {
   "elements": [
-    "#go-rin-no-sho:shinobi_bladed"
+    "minecraft:mace"
   ],
   "patch": {
     "spell_engine:spell_container": {
       "spell_ids": [],
       "pools": [],
       "access": "TAG",
-      "access_param": "go-rin-no-sho:shinobi_bladed_spells"
+      "access_param": "go-rin-no-sho:kusanagi_spells"
     }
   }
 }

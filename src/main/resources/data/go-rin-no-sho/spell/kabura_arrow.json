@@ -2,6 +2,7 @@
   "school": "spell_power:sohei",
   "type": "ACTIVE",
   "tier": 2,
+  "sub_tier": 2,
   "learn": {},
   "active": {},
   "target": {"type": "CASTER"},
@@ -16,23 +17,15 @@
   "impacts": [{
     "target_modifiers": [
       {
-        "conditions": [ { "entity_type": "#minecraft:yokai" } ],
-        "execute": "ALLOW",
-        "modifier": { "power_multiplier": 2.5 }
+        "conditions": [{ "entity_type": "#minecraft:yokai"}],
+        "execute": "ALLOW"
       }
     ],
-    "action": {"type": "STATUS_EFFECT",
-      "status_effect": {
-        "effect_id": "minecraft:wither",
-        "duration": 15,
-        "amplifier": 3,
-        "apply_mode": "ADD",
-        "amplifier_power_multiplier": 2}}},
-    {
-    "action": {
-      "type": "DAMAGE",
-      "damage": {
-        "spell_power_coefficient": 2.0,
-        "bypass_iframes": true}}}],
+    "action": {"type": "STATUS_EFFECT", "status_effect": {
+      "effect_id": "minecraft:wither",
+      "duration": 15,
+      "amplifier": 4,
+      "apply_mode": "ADD"}}}],
+  "arrow_perks": {"bypass_iframes": true},
   "cost": {"cooldown": {"duration": 15}}
 }

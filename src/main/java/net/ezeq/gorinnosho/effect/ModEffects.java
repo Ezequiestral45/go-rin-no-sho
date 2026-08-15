@@ -1,16 +1,12 @@
 package net.ezeq.gorinnosho.effect;
 
 import net.ezeq.gorinnosho.GoRinNoSho;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
 
 public class ModEffects {
 
@@ -34,6 +30,11 @@ public class ModEffects {
             Identifier.of(GoRinNoSho.MOD_ID, "cleansing"),
             new CleansingStatusEffect(StatusEffectCategory.BENEFICIAL, 0xffd966)
     );
+    public static final RegistryEntry<StatusEffect> KAI_BUFF = Registry.registerReference(
+            Registries.STATUS_EFFECT,
+            Identifier.of(GoRinNoSho.MOD_ID, "kai"),
+            new KaiStatusEffect(StatusEffectCategory.BENEFICIAL, 0xcc0000)
+    );
 
     public static void registerEffects() {
         GoRinNoSho.LOGGER.info("Giving a read to " + GoRinNoSho.MOD_ID);
@@ -56,5 +57,8 @@ public class ModEffects {
     }
     private static class CleansingStatusEffect extends StatusEffect {
         protected CleansingStatusEffect(StatusEffectCategory category, int color) { super(category, color); }
+    }
+    private static class KaiStatusEffect extends StatusEffect {
+        protected KaiStatusEffect(StatusEffectCategory category, int color) { super(category, color); }
     }
 }

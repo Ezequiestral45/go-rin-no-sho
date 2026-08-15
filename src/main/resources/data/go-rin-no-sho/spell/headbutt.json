@@ -2,6 +2,7 @@
   "school": "spell_power:sohei",
   "type": "ACTIVE",
   "tier": 2,
+  "sub_tier": 1,
   "learn": {},
   "active": {},
   "range": 0,
@@ -10,18 +11,21 @@
   "deliver": {"type": "MELEE", "melee": {
     "allow_airborne": false,
     "attacks": [{
-      "damage_bonus": 0.15,
-      "duration": 35,
+      "damage_bonus": 0,
+      "duration": 25,
       "delay": 0.05,
       "additional_strikes": 0,
       "forward_momentum": 0.5,
-      "hitbox": { "length": 6.0, "width": 3.0, "height": 2.0, "arc": 120 },
-      "animation": { "id": "go-rin-no-sho:headbutt"}}]}},
+      "hitbox": { "length": 4.0, "width": 2.0, "height": 2.0, "arc": 120 },
+      "animation": { "id": "go-rin-no-sho:headbutt"},
+      "swing_sound": {"id": "spell_engine:dodge"},
+      "impact_sound": {"id": "spell_engine:weapon_mace_smash_impact"}
+    }]}},
   "impacts": [
     {
       "action": {
         "type": "DISRUPT", "disrupt": {
-          "shield_blocking": true, "item_usage_seconds": 5.0 }}},
+          "shield_blocking": true, "item_usage_seconds": 3.0 }}},
     {
       "action": {
         "type": "STATUS_EFFECT", "status_effect": {
@@ -29,5 +33,5 @@
           "duration": 3,
           "amplifier": 1,
           "apply_mode": "ADD"}}}],
-  "cost": {"cooldown": { "duration": 10}}
+  "cost": {"cooldown": { "duration": 20}}
 }

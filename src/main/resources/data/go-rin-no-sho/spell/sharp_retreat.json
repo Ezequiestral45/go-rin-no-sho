@@ -2,6 +2,7 @@
   "school": "spell_power:sohei",
   "type": "ACTIVE",
   "tier": 4,
+  "sub_tier": 3,
   "learn": {},
   "active": {},
   "range": 0,
@@ -11,17 +12,18 @@
     "allow_airborne": true,
     "attacks": [{
       "damage_bonus": 0.25,
-      "duration": 35,
+      "duration": 25,
       "delay": 0.1,
       "additional_strikes": 0,
       "forward_momentum": 0,
-      "hitbox": { "length": 7.5, "width": 3.0, "height": 3.0, "arc": 45 },
-      "animation": { "id": "go-rin-no-sho:sharp_retreat"}}]}},
+      "hitbox": { "length": 8.0, "height": 3.0, "arc": 60 },
+      "animation": { "id": "go-rin-no-sho:sharp_retreat"},
+      "impact_sound": {"id": "spell_engine:weapon_thrust_launch"}}]}},
   "impacts": [
     {"action": {"type": "STATUS_EFFECT", "status_effect":
     {"effect_id": "spell_engine:bleed",
-      "duration": 15,
-      "amplifier": 1,
+      "duration": 5,
+      "amplifier": 0,
       "apply_mode": "ADD"}}},
     {"action": {"type": "VELOCITY", "apply_to_caster": true, "velocity": {
       "frame": "LOOK",
@@ -30,5 +32,5 @@
       "reset_velocity": true,
       "intent": "HELPFUL"}}}
   ],
-  "cost": {"cooldown": { "duration": 15}}
+  "cost": {"cooldown": { "duration": 25}}
 }

@@ -1,0 +1,30 @@
+{
+  "school": "spell_power:bushi",
+  "type": "ACTIVE",
+  "tier": 4,
+  "sub_tier": 2,
+  "learn": {},
+  "active": {},
+  "target": {"type": "CASTER"},
+  "range": 0,
+  "deliver": {"type": "STASH_EFFECT", "stash_effect": {
+    "id": "go-rin-no-sho:kai",
+    "amplifier": 0,
+    "duration": 5,
+    "consume": 1,
+    "triggers": [{"type": "ARROW_SHOT"}],
+    "impact_mode": "TRANSFER"}},
+  "impacts": [{
+    "action": {"type": "STATUS_EFFECT", "status_effect": {
+      "effect_id": "spell_engine:bleed",
+      "duration": 5,
+      "amplifier": 0,
+      "apply_mode": "ADD"}}}],
+  "arrow_perks": {
+    "damage_multiplier": 1.15,
+    "bypass_iframes": true,
+    "knockback": 0.5,
+    "pierce": 4
+  },
+  "cost": {"cooldown": {"duration": 15}}
+}

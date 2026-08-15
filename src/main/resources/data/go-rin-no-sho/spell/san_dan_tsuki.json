@@ -1,0 +1,49 @@
+{
+  "school": "spell_power:bushi",
+  "type": "ACTIVE",
+  "tier": 4,
+  "sub_tier": 3,
+  "learn": {},
+  "active": {},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": false,
+    "attacks": [
+      {
+        "damage_bonus": 0.05,
+        "attack_speed_multiplier": 1.2,
+        "duration": 10,
+        "delay": 0.05,
+        "forward_momentum": 0.3,
+        "hitbox": { "height": 3.0, "arc": 75 },
+        "animation": {"id": "go-rin-no-sho:san_dan_tsuki1"},
+        "swing_sound": {"id": "spell_engine:weapon_dagger_throw"},
+        "impact_sound": {"id": "spell_engine:weapon_spear_stab"}
+      },
+      {
+        "damage_bonus": 0.1,
+        "attack_speed_multiplier": 1.2,
+        "duration": 10,
+        "delay": 0.05,
+        "forward_momentum": 0.3,
+        "hitbox": { "height": 3.0, "arc": 75 },
+        "animation": {"id": "go-rin-no-sho:san_dan_tsuki2"},
+        "swing_sound": {"id": "spell_engine:weapon_dagger_throw"},
+        "impact_sound": {"id": "spell_engine:weapon_spear_stab"}
+      },
+      {
+        "damage_bonus": 0.2,
+        "attack_speed_multiplier": 1.2,
+        "duration": 20,
+        "delay": 0.05,
+        "forward_momentum": 0.3,
+        "hitbox": { "height": 3.0, "arc": 75 },
+        "animation": {"id": "go-rin-no-sho:san_dan_tsuki1"},
+        "swing_sound": {"id": "spell_engine:weapon_dagger_throw"},
+        "impact_sound": {"id": "spell_engine:weapon_spear_stab"}
+      }
+    ]}},
+  "cost": {"cooldown": { "duration": 25}}
+}

@@ -1,0 +1,13 @@
+{
+  "elements": [
+    "#minecraft:swords"
+  ],
+  "patch": {
+    "spell_engine:spell_container": {
+      "spell_ids": [],
+      "pools": [],
+      "access": "TAG",
+      "access_param": "go-rin-no-sho:katana_spells"
+    }
+  }
+}

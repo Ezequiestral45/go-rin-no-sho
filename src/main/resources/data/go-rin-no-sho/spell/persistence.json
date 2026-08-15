@@ -2,8 +2,10 @@
   "school": "spell_power:shinobi",
   "type": "ACTIVE",
   "tier": 1,
+  "sub_tier": 2,
   "learn": {},
   "range": 0,
+  "release": {"sound": {"id": "go-rin-no-sho:chain_breaking"}},
   "active": {"cast": {"duration": 0}},
   "target": {"type": "CASTER"},
   "deliver": {"type": "DIRECT"},
@@ -23,5 +25,5 @@
         "max_speed": 0.2,
         "pre_spawn_travel": 1.0
       }]},
-  "cost": {"cooldown": {"duration": 15}}
+  "cost": {"cooldown": {"duration": 35}}
 }

@@ -45,12 +45,12 @@ public abstract class LivingEntityMixin {
                         entity.getX(),
                         entity.getY(),
                         entity.getZ(),
-                        3.0f,
+                        2.0f,
                         false,
                         World.ExplosionSourceType.NONE
                 );
 
-                float TotalDamage = 5.0f + (amplifier * 10.0f);
+                float TotalDamage = 5.0f + (amplifier * 8.0f);
                 entity.damage(serverWorld.getDamageSources().magic(), TotalDamage);
 
                 // take away volatile so it doesn't explode one million times

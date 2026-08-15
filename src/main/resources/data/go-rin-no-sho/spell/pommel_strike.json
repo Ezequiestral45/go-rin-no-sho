@@ -1,0 +1,37 @@
+{
+  "school": "spell_power:bushi",
+  "type": "ACTIVE",
+  "tier": 2,
+  "sub_tier": 1,
+  "learn": {},
+  "active": {},
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {"type": "MELEE", "melee": {
+    "allow_airborne": false,
+    "attacks": [{
+      "damage_bonus": 0,
+      "duration": 20,
+      "delay": 0.05,
+      "additional_strikes": 0,
+      "forward_momentum": 0.5,
+      "hitbox": { "length": 5.0, "width": 2.0, "height": 2.0, "arc": 120 },
+      "animation": { "id": "go-rin-no-sho:pommel_strike"},
+      "swing_sound": {"id": "spell_engine:weapon_throw"},
+      "impact_sound": {"id": "spell_engine:weapon_sickle_impact_large"}
+    }]}},
+  "impacts": [
+    {
+      "action": {
+        "type": "DISRUPT", "disrupt": {
+          "shield_blocking": false, "item_usage_seconds": 5 }}},
+    {
+      "action": {
+        "type": "STATUS_EFFECT", "status_effect": {
+          "effect_id": "spell_engine:stun",
+          "duration": 3,
+          "amplifier": 1,
+          "apply_mode": "ADD"}}}],
+  "cost": {"cooldown": { "duration": 15}}
+}

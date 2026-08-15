@@ -1,0 +1,63 @@
+{
+  "school": "spell_power:bushi",
+  "type": "ACTIVE",
+  "tier": 2,
+  "sub_tier": 3,
+  "learn": {},
+  "active": {
+    "cast": {
+      "duration": 3,
+      "animation": { "id": "go-rin-no-sho:charge_charge", "speed": 0.75},
+      "start_sound": {"id": "go-rin-no-sho:full_charge", "speed": 0.7},
+      "type": "CHARGE",
+      "charge": {
+        "curve": "EASE_IN_QUART",
+        "bonus": {
+          "melee_slipperiness_add": 0.25,
+          "melee_momentum_add": 0.5,
+          "knockback_multiply_base": 2.0,
+          "range_add": 3.5,
+          "melee_damage_multiplier": 1.5
+        },
+        "min_release_ratio": 0.2,
+        "output_scaling": 0.5
+      }
+    }
+  },
+  "range": 0,
+  "range_mechanic": "MELEE",
+  "target": {"type": "NONE"},
+  "deliver": {
+    "type": "MELEE",
+    "melee": {
+      "allow_airborne": false,
+      "attacks": [
+        {
+          "damage_bonus": 0.25,
+          "duration": 30,
+          "delay": 0,
+          "additional_strikes": 0,
+          "forward_momentum": 1,
+          "hitbox": { "length": 7.5, "arc": 70 },
+          "animation": { "id": "go-rin-no-sho:charge"},
+          "swing_sound": { "id": "spell_engine:weapon_thrust_launch"}
+        }
+      ]
+    }
+  },
+  "impacts": [
+    {
+      "action": {
+        "type": "VELOCITY",
+        "velocity": {
+          "frame": "ORIGIN",
+          "push": { "x": 0.0, "y": 0.2, "z": 1.0 },
+          "power_coefficient": 1.0,
+          "reset_velocity": true,
+          "intent": "HARMFUL"
+        }
+      }
+    }
+  ],
+  "cost": {"cooldown": { "duration": 20}}
+}
