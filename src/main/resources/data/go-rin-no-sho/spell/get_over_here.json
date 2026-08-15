@@ -5,30 +5,36 @@
   "sub_tier": 2,
   "learn": {},
   "active": {},
-  "target": {"type": "AIM",
-    "aim": {
-      "required": false,
-      "sticky": false,
-      "use_caster_as_fallback": false,
-      "reposition_vertically": 0.0}},
-  "range": 10,
-  "deliver": {"type": "SHOOT_ARROW", "shoot_arrow": {"launch_properties": { "velocity": 1}}},
-  "arrow_perks": {"damage_multiplier": 0.75, "bypass_iframes": true, "knockback": 0.5},
+  "target": {"type": "CASTER"},
+  "range": 0,
+  "deliver": {"type": "STASH_EFFECT", "stash_effect": {
+    "id": "go-rin-no-sho:chainedprojectile",
+    "amplifier": 0,
+    "duration": 5,
+    "consume": 1,
+    "triggers": [{"type": "ARROW_SHOT"}],
+    "impact_mode": "TRANSFER"}},
   "impacts": [
-    {"action": {"type": "STATUS_EFFECT",
-      "status_effect": {
-        "effect_id": "spell_engine:immobilize",
-        "duration": 5,
-        "amplifier": 0,
-        "apply_mode": "ADD"}}},
-    {"action": {"type": "VELOCITY", "velocity": {
-      "frame": "LOOK",
-      "push": {
-        "x": 0.0,
-        "y": 0.2,
-        "z": -1.0},
-      "power_coefficient": 0.8,
-      "reset_velocity": true,
-      "intent": "HARMFUL"}}}],
-  "cost": {"cooldown": {"duration": 10}}
+    {
+      "action": {
+        "type": "STATUS_EFFECT", "status_effect": {
+          "effect_id": "spell_engine:immobilize",
+          "duration": 5,
+          "amplifier": 0,
+          "apply_mode": "ADD"}}},
+    {
+      "action": {
+        "type": "VELOCITY", "velocity": {
+          "frame": "LOOK",
+          "push": { "x": 0.0, "y": 0.3, "z": -2},
+          "power_coefficient": 0.0,
+          "reset_velocity": true,
+          "intent": "HARMFUL"}}}
+  ],
+  "arrow_perks": {
+    "damage_multiplier": 1.15,
+    "bypass_iframes": true,
+    "knockback": 0.5
+  },
+  "cost": {"cooldown": {"duration": 15}}
 }

@@ -45,5 +45,5 @@
         "pre_spawn_travel": 1.0
       }
     ]},
-  "cost": {"cooldown": {"duration": 35}}
+  "cost": {"cooldown": {"duration": 45}}
 }

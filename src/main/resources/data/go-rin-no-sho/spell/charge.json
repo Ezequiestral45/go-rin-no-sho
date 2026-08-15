@@ -8,7 +8,7 @@
     "cast": {
       "duration": 3,
       "animation": { "id": "go-rin-no-sho:charge_charge", "speed": 0.75},
-      "start_sound": {"id": "go-rin-no-sho:full_charge", "speed": 0.7},
+      "sound": {"id": "go-rin-no-sho:bushi_charge", "speed": 0.4},
       "type": "CHARGE",
       "charge": {
         "curve": "EASE_IN_QUART",
@@ -24,6 +24,7 @@
       }
     }
   },
+  "release": {"sound": { "id": "go-rin-no-sho:bushi_finale", "speed": 1}},
   "range": 0,
   "range_mechanic": "MELEE",
   "target": {"type": "NONE"},
@@ -35,8 +36,10 @@
         {
           "damage_bonus": 0.25,
           "duration": 30,
-          "delay": 0,
-          "additional_strikes": 0,
+          "delay": 0.5,
+          "additional_strikes": 4,
+          "additional_strike_delay": 0.15,
+          "additional_hits_on_same_target": false,
           "forward_momentum": 1,
           "hitbox": { "length": 7.5, "arc": 70 },
           "animation": { "id": "go-rin-no-sho:charge"},

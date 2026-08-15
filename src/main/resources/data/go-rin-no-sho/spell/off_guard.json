@@ -27,5 +27,5 @@
       "type": "DISRUPT",
       "disrupt": { "shield_blocking": false, "item_usage_seconds": 10.0 }
     }}],
-  "cost": {"cooldown": { "duration": 25}}
+  "cost": {"cooldown": { "duration": 20}}
 }

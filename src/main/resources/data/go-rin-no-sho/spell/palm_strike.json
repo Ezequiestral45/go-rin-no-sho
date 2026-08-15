@@ -33,5 +33,5 @@
           "power_coefficient": 0.0,
           "reset_velocity": true,
           "intent": "HARMFUL"}}}],
-  "cost": {"cooldown": { "duration": 10}}
+  "cost": {"cooldown": { "duration": 20}}
 }

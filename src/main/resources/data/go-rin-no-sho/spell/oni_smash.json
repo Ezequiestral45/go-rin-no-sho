@@ -5,19 +5,23 @@
   "sub_tier": 1,
   "learn": {},
   "active": { "cast": {
-    "duration": 1, "animation": { "id": "go-rin-no-sho:oni_charge", "speed": 0.5}}},
+    "duration": 2,
+    "animation": { "id": "go-rin-no-sho:oni_charge", "speed": 0.35},
+    "sound": { "id": "go-rin-no-sho:oni_charge", "speed": 1.75}
+  }},
+  "release": {"sound": { "id": "go-rin-no-sho:oni_finale", "speed": 1}},
   "range": 0,
   "range_mechanic": "MELEE",
   "target": {"type": "NONE"},
   "deliver": {"type": "MELEE", "melee": {
     "allow_airborne": false,
     "attacks": [{
-      "damage_bonus": 0.5,
+      "damage_bonus": 0.75,
       "duration": 25,
       "delay": 0.15,
       "additional_strikes": 0,
       "forward_momentum": 0.5,
-      "hitbox": { "arc": 90 },
+      "hitbox": { "arc": 270 },
       "animation": { "id": "spell_engine:two_handed_slash_vertical_slash"},
       "swing_sound": {"id": "spell_engine:weapon_ground_slam"}
     }]}},
@@ -33,6 +37,15 @@
         "effect_id": "minecraft:resistance",
         "duration": 10,
         "amplifier": 0,
-        "apply_mode": "ADD"}}}],
-  "cost": {"cooldown": { "duration": 25}}
+        "apply_mode": "ADD"}}},
+    {
+      "action": {
+        "type": "VELOCITY", "velocity": {
+          "frame": "LOOK",
+          "push": { "x": 0.0, "y": 0.4, "z": 0.0},
+          "power_coefficient": 0.0,
+          "reset_velocity": false,
+          "intent": "HARMFUL"}}}
+  ],
+  "cost": {"cooldown": { "duration": 30}}
 }

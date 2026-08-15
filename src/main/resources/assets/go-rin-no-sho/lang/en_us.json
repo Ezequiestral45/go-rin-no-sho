@@ -47,7 +47,7 @@
   "spell.go-rin-no-sho.tsubame_gaeshi.name": "Tsubame Gaeshi",
   "spell.go-rin-no-sho.tsubame_gaeshi.description": "Slash in one direction and quickly Recover with a Returning Swing",
   "spell.go-rin-no-sho.war_cry.name": "War Cry",
-  "spell.go-rin-no-sho.war_cry.description": "Taunt the Opponents as you get Ready to Fight",
+  "spell.go-rin-no-sho.war_cry.description": "Shout Violently to scare the Enemies as you get Ready to Fight",
   "spell.go-rin-no-sho.san_dan_tsuki.name": "San Dan Tsuki",
   "spell.go-rin-no-sho.san_dan_tsuki.description":  "By quickly aligning your Yari from different angles, Deliver three Unexpected Thrusts",
   "spell.go-rin-no-sho.yari_wall.name": "Yari Wall",
@@ -84,6 +84,7 @@
 
   "effect.go-rin-no-sho.cleansing": "Cleansing Ritual",
   "effect.go-rin-no-sho.kai": "Kai",
+  "effect.go-rin-no-sho.cripplingaccuracy": "Crippling Accuracy",
   "effect.go-rin-no-sho.envenomed": "Envenomed Coating",
   "effect.go-rin-no-sho.volatile": "Volatile Substance",
   "effect.go-rin-no-sho.loadedsubstance": "Loaded Substance",

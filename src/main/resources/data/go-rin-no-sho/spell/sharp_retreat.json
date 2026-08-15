@@ -15,7 +15,7 @@
       "duration": 25,
       "delay": 0.1,
       "additional_strikes": 0,
-      "forward_momentum": 0,
+      "forward_momentum": 1,
       "hitbox": { "length": 8.0, "height": 3.0, "arc": 60 },
       "animation": { "id": "go-rin-no-sho:sharp_retreat"},
       "impact_sound": {"id": "spell_engine:weapon_thrust_launch"}}]}},

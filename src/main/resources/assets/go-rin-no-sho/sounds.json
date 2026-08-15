@@ -1,12 +1,47 @@
 {
-  "full_charge": {
+  "bushi_start": {
     "sounds": [
-      "go-rin-no-sho:full_charge"
+      "go-rin-no-sho:bushi_start"
+    ]
+  },
+  "bushi_charge": {
+    "sounds": [
+      "go-rin-no-sho:bushi_charge"
+    ]
+  },
+  "bushi_finale": {
+    "sounds": [
+      "go-rin-no-sho:bushi_finale"
+    ]
+  },
+  "yari_wall_finale": {
+    "sounds": [
+      "go-rin-no-sho:yari_wall_finale"
+    ]
+  },
+  "oni_start": {
+    "sounds": [
+      "go-rin-no-sho:oni_start"
+    ]
+  },
+  "oni_charge": {
+    "sounds": [
+      "go-rin-no-sho:oni_charge"
+    ]
+  },
+  "oni_finale": {
+    "sounds": [
+      "go-rin-no-sho:oni_finale"
     ]
   },
   "smoke_bomb": {
     "sounds": [
       "go-rin-no-sho:smoke_bomb"
+    ]
+  },
+  "intent": {
+    "sounds": [
+      "go-rin-no-sho:intent"
     ]
   },
   "breathe_in": {

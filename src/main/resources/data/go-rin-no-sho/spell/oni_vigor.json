@@ -6,7 +6,11 @@
   "learn": {},
   "range": 0,
   "active": { "cast": {
-    "duration": 2, "animation": { "id": "go-rin-no-sho:oni_charge", "speed": 0.5}}},
+    "duration": 3,
+    "animation": { "id": "go-rin-no-sho:oni_charge", "speed": 0.35},
+    "sound": { "id": "go-rin-no-sho:oni_charge", "speed": 1.75}
+  }},
+  "release": {"sound": { "id": "go-rin-no-sho:oni_finale", "speed": 1}},
   "target": {"type": "CASTER"},
   "deliver": {"type": "DIRECT"},
   "impacts": [
@@ -42,5 +46,5 @@
         "pre_spawn_travel": 1.0
       }
     ]},
-  "cost": {"cooldown": {"duration": 25}}
+  "cost": {"cooldown": {"duration": 45}}
 }

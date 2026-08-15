@@ -8,8 +8,15 @@ import net.minecraft.util.Identifier;
 public class ModSounds {
     public static final String MOD_ID = "go-rin-no-sho";
 
-    public static final SoundEvent FULL_CHARGE = registerSound("full_charge");
+    public static final SoundEvent BUSHI_START = registerSound("bushi_start");
+    public static final SoundEvent BUSHI_CHARGE = registerSound("bushi_charge");
+    public static final SoundEvent BUSHI_FINALE = registerSound("bushi_finale");
+    public static final SoundEvent YARI_WALL_FINALE = registerSound("yari_wall_finale");
+    public static final SoundEvent ONI_START = registerSound("oni_start");
+    public static final SoundEvent ONI_CHARGE = registerSound("oni_charge");
+    public static final SoundEvent ONI_FINALE = registerSound("oni_finale");
     public static final SoundEvent SMOKE_BOMB = registerSound("smoke_bomb");
+    public static final SoundEvent INTENT = registerSound("intent");
     public static final SoundEvent SAGE_BLESSING = registerSound("sage_blessing");
     public static final SoundEvent CHAIN_BREAKING = registerSound("chain_breaking");
     public static final SoundEvent CALTROP_DROP = registerSound("caltrop_drop");

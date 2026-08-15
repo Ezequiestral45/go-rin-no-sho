@@ -8,6 +8,7 @@
   "active": {"cast": {"duration": 0}},
   "target": {"type": "CASTER"},
   "deliver": {"type": "DIRECT"},
+  "release": {"sound": {"id": "go-rin-no-sho:intent"}, "speed": 2},
   "impacts": [
     {"action": {"type": "STATUS_EFFECT", "status_effect":
     {"effect_id": "minecraft:strength",
@@ -26,5 +27,5 @@
         "max_speed": 0.2,
         "pre_spawn_travel": 1.0
       }]},
-  "cost": {"cooldown": {"duration": 20}}
+  "cost": {"cooldown": {"duration": 30}}
 }

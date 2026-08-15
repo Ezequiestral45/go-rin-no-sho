@@ -20,5 +20,5 @@
       "duration": 7,
       "amplifier": 0,
       "apply_mode": "SET"}}}],
-  "cost": {"cooldown": {"duration": 10}}
+  "cost": {"cooldown": {"duration": 20}}
 }

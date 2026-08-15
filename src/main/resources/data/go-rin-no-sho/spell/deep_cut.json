@@ -24,7 +24,7 @@
         "delay": 0.05,
         "forward_momentum": 0.3,
         "hitbox": { "length": 6.0, "arc": 70 },
-        "animation": {"id": "go-rin-no-sho:deep_cut1"},
+        "animation": {"id": "go-rin-no-sho:deep_cut1_v2"},
         "swing_sound": {"id": "spell_engine:weapon_dagger_throw"},
         "impact_sound": {"id": "spell_engine:weapon_sickle_impact_large"}
       },
@@ -35,7 +35,7 @@
         "delay": 0.05,
         "forward_momentum": 0.5,
         "hitbox": { "arc": 120 },
-        "animation": {"id": "go-rin-no-sho:deep_cut2"},
+        "animation": {"id": "go-rin-no-sho:deep_cut2_v2"},
         "swing_sound": {"id": "spell_engine:weapon_sword_swing", "speed": 0.1}
       }
     ]}},

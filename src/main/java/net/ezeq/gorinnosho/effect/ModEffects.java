@@ -20,6 +20,11 @@ public class ModEffects {
             Identifier.of(GoRinNoSho.MOD_ID, "loadedsubstance"),
             new LoadedSubstanceStatusEffect(StatusEffectCategory.BENEFICIAL, 0xe49f52)
     );
+    public static final RegistryEntry<StatusEffect> CHAINEDPROJECTILE_BUFF = Registry.registerReference(
+            Registries.STATUS_EFFECT,
+            Identifier.of(GoRinNoSho.MOD_ID, "chainedprojectile"),
+            new ChainedProjectileStatusEffect(StatusEffectCategory.BENEFICIAL, 0x5b5b5b)
+    );
     public static final RegistryEntry<StatusEffect> VOLATILE_DEBUFF = Registry.registerReference(
             Registries.STATUS_EFFECT,
             Identifier.of(GoRinNoSho.MOD_ID, "volatile"),
@@ -34,6 +39,11 @@ public class ModEffects {
             Registries.STATUS_EFFECT,
             Identifier.of(GoRinNoSho.MOD_ID, "kai"),
             new KaiStatusEffect(StatusEffectCategory.BENEFICIAL, 0xcc0000)
+    );
+    public static final RegistryEntry<StatusEffect> CRIPPLINGACCURACY_BUFF = Registry.registerReference(
+            Registries.STATUS_EFFECT,
+            Identifier.of(GoRinNoSho.MOD_ID, "cripplingaccuracy"),
+            new CripplingAccuracyStatusEffect(StatusEffectCategory.BENEFICIAL, 0xea9999)
     );
 
     public static void registerEffects() {
@@ -50,6 +60,11 @@ public class ModEffects {
             super(category, color);
         }
     }
+    private static class ChainedProjectileStatusEffect extends StatusEffect {
+        protected ChainedProjectileStatusEffect(StatusEffectCategory category, int color) {
+            super(category, color);
+        }
+    }
     private static class VolatileStatusEffect extends StatusEffect {
         protected VolatileStatusEffect(StatusEffectCategory category, int color) {
             super(category, color);
@@ -60,5 +75,10 @@ public class ModEffects {
     }
     private static class KaiStatusEffect extends StatusEffect {
         protected KaiStatusEffect(StatusEffectCategory category, int color) { super(category, color); }
+    }
+    private static class CripplingAccuracyStatusEffect extends StatusEffect {
+        protected CripplingAccuracyStatusEffect(StatusEffectCategory category, int color) {
+            super(category, color);
+        }
     }
 }
