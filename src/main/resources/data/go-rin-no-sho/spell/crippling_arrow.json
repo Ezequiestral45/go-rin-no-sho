@@ -4,10 +4,11 @@
   "tier": 2,
   "sub_tier": 2,
   "learn": {},
+  "active": {},
   "target": {"type": "CASTER"},
   "range": 0,
   "deliver": {"type": "STASH_EFFECT", "stash_effect": {
-    "id": "go-rin-no-sho:chainedprojectile",
+    "id": "go-rin-no-sho:cripplingaccuracy",
     "amplifier": 0,
     "duration": 5,
     "consume": 1,
@@ -23,9 +24,9 @@
           "apply_mode": "ADD"}}}
   ],
   "arrow_perks": {
-    "damage_multiplier": 1.05,
+    "damage_multiplier": 1,
     "bypass_iframes": true,
-    "knockback": 0
+    "knockback": 0.5
   },
   "cost": {"cooldown": {"duration": 15}}
 }
