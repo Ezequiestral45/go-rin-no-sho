@@ -55,7 +55,14 @@ public class GoRinNoSho implements ModInitializer {
 			ResourceManagerHelper.registerBuiltinResourcePack(
 					Identifier.of(MOD_ID, "learning"),
 					modContainer,
-					ResourcePackActivationType.ALWAYS_ENABLED
+					ResourcePackActivationType.DEFAULT_ENABLED
+			);
+		});
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
+			ResourceManagerHelper.registerBuiltinResourcePack(
+					Identifier.of(MOD_ID, "learning_legacy"),
+					modContainer,
+					ResourcePackActivationType.NORMAL
 			);
 		});
 

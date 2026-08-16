@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "go-rin-no-sho",
-	"version": "0.2.0",
+	"version": "0.4.0",
 	"name": "Go-Rin No Sho",
 	"description": "This mod aims to bring abilities to the mod Sengoku Jidai by QwikSand through Spell Engine",
 	"authors": [
