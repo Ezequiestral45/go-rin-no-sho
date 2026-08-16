@@ -44,6 +44,11 @@
       "go-rin-no-sho:intent"
     ]
   },
+  "firecrackers": {
+    "sounds": [
+      "go-rin-no-sho:firecrackers"
+    ]
+  },
   "breathe_in": {
     "sounds": [
       "go-rin-no-sho:breathe_in"

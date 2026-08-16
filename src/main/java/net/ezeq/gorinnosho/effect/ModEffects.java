@@ -20,11 +20,6 @@ public class ModEffects {
             Identifier.of(GoRinNoSho.MOD_ID, "loadedsubstance"),
             new LoadedSubstanceStatusEffect(StatusEffectCategory.BENEFICIAL, 0xe49f52)
     );
-    public static final RegistryEntry<StatusEffect> CHAINEDPROJECTILE_BUFF = Registry.registerReference(
-            Registries.STATUS_EFFECT,
-            Identifier.of(GoRinNoSho.MOD_ID, "chainedprojectile"),
-            new ChainedProjectileStatusEffect(StatusEffectCategory.BENEFICIAL, 0x5b5b5b)
-    );
     public static final RegistryEntry<StatusEffect> VOLATILE_DEBUFF = Registry.registerReference(
             Registries.STATUS_EFFECT,
             Identifier.of(GoRinNoSho.MOD_ID, "volatile"),
@@ -57,11 +52,6 @@ public class ModEffects {
     }
     private static class LoadedSubstanceStatusEffect extends StatusEffect {
         protected LoadedSubstanceStatusEffect(StatusEffectCategory category, int color) {
-            super(category, color);
-        }
-    }
-    private static class ChainedProjectileStatusEffect extends StatusEffect {
-        protected ChainedProjectileStatusEffect(StatusEffectCategory category, int color) {
             super(category, color);
         }
     }

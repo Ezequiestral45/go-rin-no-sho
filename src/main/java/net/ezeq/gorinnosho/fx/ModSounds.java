@@ -17,6 +17,7 @@ public class ModSounds {
     public static final SoundEvent ONI_FINALE = registerSound("oni_finale");
     public static final SoundEvent SMOKE_BOMB = registerSound("smoke_bomb");
     public static final SoundEvent INTENT = registerSound("intent");
+    public static final SoundEvent FIRECRACKERS = registerSound("firecrackers");
     public static final SoundEvent SAGE_BLESSING = registerSound("sage_blessing");
     public static final SoundEvent CHAIN_BREAKING = registerSound("chain_breaking");
     public static final SoundEvent CALTROP_DROP = registerSound("caltrop_drop");
